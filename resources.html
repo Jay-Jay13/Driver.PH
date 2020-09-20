@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver.PH</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/72c583f581.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hamburger").click(function(){
+                $(".wrapper").toggleClass("active");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="hamburger_inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">Driver.PH</a>
+                </div>
+                <div class="right_menu">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="sidebar">
+                <div class="sidebar_inner">
+                    <ul>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                            <span class="title">Dashboard</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="title">Profile</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-id-badge"></i></span>
+                            <span class="title">Collection</span></a>
+                        </li>
+                        <li><a href="#">
+                            <!-- <span class="icon"><i class="fas fa-project-diagram"></i></span> -->
+                            <span class="icon"><i class="fas fa-book"></i></span>
+                            <span class="title">Modules</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-video"></i></span>
+                            <span class="title">Webinar</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-trophy"></i></span>
+                            <span class="title">Leaderboard</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="jumbotron">
+                    <!-- <div class="container"> -->
+                      <h3>This is the Courses Page! Details here.</h3>
+                      <p>Add details here.</p>
+                    <!-- </div> -->
+                </div>
+                <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="thumbnail">
+                        <div class="caption">
+                          <h4>Basic</h4>
+                        </div>
+                          <img src="https://www.a-plusglobaldrivingschool.com/images/AplusDrivingSchoolClassroom5.jpg">
+                        <hr>
+                        <p>
+                          <a class="btn btn-primary" href="#">View All Contents</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="thumbnail">
+                        <div class="caption">
+                          <h4>Common</h4>
+                        </div>
+                          <img src="https://www.a-plusglobaldrivingschool.com/images/AplusDrivingSchoolClassroom5.jpg">
+                        <hr>
+                        <p>
+                          <a class="btn btn-primary" href="#">View All Contents</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="thumbnail">
+                        <div class="caption">
+                          <h4>Core</h4>
+                        </div>
+                          <img src="https://www.a-plusglobaldrivingschool.com/images/AplusDrivingSchoolClassroom5.jpg">
+                        <hr>
+                        <p>
+                          <a class="btn btn-primary" href="#">View All Contents</a>
+                        </p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

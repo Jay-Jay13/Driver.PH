@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver.PH</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/72c583f581.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hamburger").click(function(){
+                $(".wrapper").toggleClass("active");
+            })
+        })
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="hamburger_inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">Driver.PH</a>
+                </div>
+                <div class="right_menu">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="sidebar">
+                <div class="sidebar_inner">
+                    <ul>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                            <span class="title">Dashboard</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="title">Profile</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-id-badge"></i></span>
+                            <span class="title">Collection</span></a>
+                        </li>
+                        <li><a href="#">
+                            <!-- <span class="icon"><i class="fas fa-project-diagram"></i></span> -->
+                            <span class="icon"><i class="fas fa-book"></i></span>
+                            <span class="title">Resources</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-video"></i></span>
+                            <span class="title">Webinar</span></a>
+                        </li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-trophy"></i></span>
+                            <span class="title">Leaderboard</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <!-- <div class="jumbotron">
+                      <h3>This is the Courses Page! Details here.</h3>
+                      <p>Add details here.</p>
+                </div> -->
+                    <div>
+                        <h2>Points</h2>
+                            <div class="ePoints">
+                            <p>Total Earned Points:</p>
+                            </div>
+                    </div>
+                    <div>
+                        <h2>Badges</h2>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

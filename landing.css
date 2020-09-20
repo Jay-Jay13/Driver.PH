@@ -1,0 +1,83 @@
+body{
+    background: black;
+}
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+  
+  #landing-header h1 {
+    color: #fff;
+  }
+  
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  /* Below code is to remove bullets */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  /* Allow to take up the entire size of the page  */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+  
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://www.taylorautoglass.com/wp-content/uploads/2018/07/SemiTruck.jpg) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://www.topmarkfunding.com/wp-content/uploads/2020/01/Semi-Truck-Financing-Frequently-Asked-Questions-1024x576-1024x585.jpg);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://freightliner.blob.core.windows.net/media/truck/long-haul/long-haul-red-1024x689.jpg);
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(https://blog.spurlocktransport.com/users/u179/179144/Blog%20Posts/Long-haul-trucking.jpg);
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(https://www.adzuna.co.za/blog/wp-content/uploads/2019/08/truck-driving-jobs.jpg);
+    animation-delay: 40s; 
+  }
+  
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  
+  /* Older browser support - class added by modernizr */
+  .no-cssanimations .slideshow li {
+      opacity: 1;
+  }
